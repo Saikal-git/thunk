@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Facts from "./components/Facts";
+import Genderize from "./components/Genders";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import News from "./components/News";
+import Weather from "./components/Weather";
+// import { useState } from "react";
+import Universities from "./components/Universities";
+import Btc from "./components/Btc";
+import Geo from "./components/Geo";
 
 function App() {
+  // const [valueInput, setValueInput] = useState("");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      {/* <Home/> */}
+      {/* <Genderize /> */}
+      {/* <Weather /> */}
+      {/* <Facts /> */}
+      {/* <News setValueInput={setValueInput} valueInput={valueInput} /> */}
+      <Universities />
+      {/* <Btc /> */}
+      {/* <Geo/> */}
     </div>
   );
 }
